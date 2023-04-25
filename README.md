@@ -23,7 +23,7 @@ To use the website:
 
 1. Clone the repository to your local machine using `git clone`.
 2. Install the dependencies by running `npm install` in the project directory.
-3. Run the project using `npm start`.
+3. Run the project using `npm run dev`.
 4. The website will be running on `http://localhost:3000`.
 
 ## Credits
