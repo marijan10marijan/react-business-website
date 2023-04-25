@@ -1,4 +1,6 @@
-# Project Title
+# React Business Website
+
+## Website available on: (https://marijan10marijan.github.io/react-business-website/)
 
 This is the README file for a responsive website created with React and SCSS preprocessor for CSS. The project was inspired by a design found on the Web Design Inspiration website and adapted to personal preferences.
 
