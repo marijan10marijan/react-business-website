@@ -1,0 +1,36 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $clr-bg-light;
+    font-family: Poppins,sans-serif;
+}
+
+.container{
+    width: min(1600px, 95%);
+    margin-inline: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1, h2{
+    margin-block-end: 1rem;
+    font-weight: bold;
+}
+p,a{
+    margin-block-end: .5rem;
+}
+

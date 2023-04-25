@@ -1,0 +1,17 @@
+.footer{
+    padding-block: 1.5rem;
+    background-color: black;
+    color: $clr-text;
+
+    &__text{
+        font-size: 1rem;
+        font-weight: 400;
+
+        @media screen and (max-width:576px){
+            font-size: .9rem;
+            width: 85%;
+            margin-inline: auto;
+            text-align: center;
+        }
+    }
+}

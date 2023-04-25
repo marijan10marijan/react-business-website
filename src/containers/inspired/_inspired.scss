@@ -1,0 +1,102 @@
+.inspired{
+    background-image: linear-gradient(to bottom right,#ffd42d,#ffd42d 50%,#ffd948 0,#ffd948)!important;
+    background-repeat: no-repeat!important;
+    background-position-x: 30%;
+    background-size: contain;
+    padding-block: 2rem;
+    position: relative;
+
+    &__div{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 12rem;
+
+        @media screen and (max-width: 1030px){
+            gap: 6rem;
+        }
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+            gap: 2rem;
+            align-items: flex-end;
+        }
+    }
+
+    &__left{
+        text-align: right;
+        color: $clr-brown;
+        
+        @media screen and (max-width: 1030px){
+            & p{
+                font-size: 1rem;
+
+                @media screen and (max-width: 515px){
+                    font-size: .9rem;
+                }
+            }
+
+            & h2{
+                font-size: 1.1rem;
+            }
+        }
+    }
+    &__right{
+        text-align: right;
+        color: $clr-brown;
+
+        & h1{
+            margin-block-end: .4rem;
+
+            @media screen and (max-width: 768px){
+                font-size: 1rem;
+            }
+        }
+
+        & a{
+            color: $clr-brown;
+            font-weight: 800;
+            transition: 250ms ease-in;
+
+            @media screen and (max-width: 768px){
+                font-size: 1rem;
+            }
+        }
+        & a:hover{
+            color: $clr-brown-hover;
+        }
+    }
+
+    &__img{
+        position: absolute;
+        top: -45%;
+        height: 470px;
+        left: 0;
+    }
+
+    &__img2{
+        display: none;
+    }
+
+    @media screen and (max-width: 1030px){
+        &__img{
+            display: none;
+        }
+
+        &__img2{
+            display: block;
+            position: absolute;
+            bottom: -77%;
+            height: 390px;
+            left: -120px;
+
+            @media screen and (max-width: 768px){
+                bottom: -46%;
+            }
+            @media screen and (max-width: 515px){
+                height: 270px;
+                bottom: -32%;
+                left: -90px;
+            }
+        }
+    }
+}

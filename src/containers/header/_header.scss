@@ -1,0 +1,109 @@
+.header{
+    height: 100px;
+    position: fixed;
+    display: grid;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+    background-color: $clr-bg-light;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width:940px){
+        width: 100%;
+    }
+
+    &__img{
+        width: 120px;
+        height: 40px;
+        padding-inline-start: 15px;
+    }
+    &__links{  
+        margin-inline-start: 5rem;
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+
+        @media screen and (max-width:1030px){
+            gap: 1.5rem;
+            margin-inline-start: 3rem;
+        }
+        @media screen and (max-width:940px){
+            display: none;
+        }
+    }    
+
+    &__hamburger{
+        display: none;
+        margin-inline-end: 15px;
+
+        @media screen and (max-width:940px){
+            display: flex;
+            width: 25px;
+            height: 25px;
+        }        
+    }
+
+    &__buttons-link1{
+        cursor: pointer;
+        font-size: .9rem;
+        font-weight: 400;
+        padding: .5rem 1rem;
+        border: 1px solid black;
+        font-weight: 500;
+        color: black;
+        border-radius: 1rem;
+        transition: 250ms ease-in;
+
+        @media screen and (max-width:940px){
+            display: none;
+        }
+
+    }
+    &__buttons-link1:hover{
+        background-color: black;
+        color: $clr-text;
+    }
+
+    .hidden{
+        display: none;
+    }
+    .activeNav{
+        position: absolute;
+        top: 100px;
+        background-color: $clr-bg-light;
+        color: black;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        padding-inline: 0;
+
+        &>*{
+            color: black;
+        }
+        &>*:first-child{
+            margin-block-start: 2rem;
+        }
+        &-btn{
+            // background-color: white;
+            // color: black;
+            display: block;
+            transition: 300ms ease-in;
+            color: black;
+        }
+        &-btn:hover{
+            opacity: .8;
+            color: white;
+        }
+        
+    }
+    
+}
+

@@ -1,0 +1,26 @@
+.solution{
+    padding-block-start: 12rem;
+    padding-block-end: 5rem;
+    background-color: $clr-solution;
+
+    &__text{
+        text-align: center;
+        z-index: 10;
+        margin-block-end: 1.5rem; 
+    }
+    &__title{
+        color: $clr-dark;
+        font-size: calc(22px + 1.6vw);
+        line-height: 1.2;
+        font-weight: bold;
+        text-align: center;
+        font-family: $font-family;
+
+        @media screen and (max-width:768px){
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width:515px){
+            font-size: 1.4rem;
+        }
+    }
+}

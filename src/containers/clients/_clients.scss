@@ -1,0 +1,49 @@
+.clients{
+    padding-block: 8rem;
+    background-color: black;
+    color: $clr-text;
+
+    &__title{
+        text-align: center;
+        font-size: calc(35px + 1.2vw);
+        margin-block-end: 0;
+
+        @media screen and (max-width: 768px){
+            font-size: 2rem;
+        }
+    }
+
+    &__subtitle{
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+
+    &__text{
+        width: 85%;
+        margin-inline: auto;
+        text-align: center;
+        margin-block-end: 3rem;
+
+        @media screen and (max-width: 768px){
+            width: 95%;
+            line-height: 1.2;
+            font-size: .9rem;
+            text-align: left;
+        }
+    }
+
+    &__icons{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        row-gap: 2rem;
+
+        @media screen and (max-width: 768px){
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        & img{
+            width: 100%;
+        }
+    }
+}

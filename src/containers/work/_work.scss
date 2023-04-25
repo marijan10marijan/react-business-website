@@ -1,0 +1,35 @@
+.work{
+    width: 100%;
+    background-color: $clr-dark;
+    padding-block: 8rem;
+
+    &__div{
+        & h2{
+            color: $clr-x-light-blue;
+            font-weight: 400; 
+            text-align: center;
+
+            @media screen and (max-width: 768px){
+                font-size: 1.1rem;
+            }
+        }
+
+        & p{
+            color: $clr-text;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            width: min(600px,90%);
+            margin-inline: auto;
+            font-weight: 500;
+
+            @media screen and (max-width: 1030PX){
+                font-size: 1.6rem;
+            }
+
+            @media screen and (max-width: 768px){
+                font-size: 1.3rem;
+                line-height: 1.4;
+            }
+        }
+    }
+}

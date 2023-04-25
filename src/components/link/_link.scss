@@ -1,0 +1,14 @@
+.link{
+    // display: flex;
+    // align-items: center;
+    gap: .3rem;
+
+    &__ancher{
+        font-family: $font-family;
+        color: #000;
+        font-size: .9rem;
+        font-weight: 700;
+        margin-inline-end: .5rem;
+    }
+
+}

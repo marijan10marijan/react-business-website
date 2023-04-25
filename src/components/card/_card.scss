@@ -1,0 +1,61 @@
+.card{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border-radius: .5rem;
+    margin-block: 3rem;
+    row-gap: 3rem;
+    column-gap: 1.5rem;
+
+    &__firstBox h1{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-block-end: 2rem;
+    }
+    &__firstBox a{
+        padding: 1rem;
+        border: 1px solid #444343;
+        color: #444343;
+        transition: all 250ms ease-in;
+    }
+    &__firstBox a:hover{
+        opacity: .6;
+    }
+    
+    &__secondBox h2,
+    &__thirdBox h2,
+    &__fourthBox h2{
+        font-size: 1.2rem;
+        margin-block-end: 1rem;
+    }
+
+    @media screen and (max-width:1030px){
+        grid-template-columns: repeat(3,1fr);
+    }
+    @media screen and (max-width:768px){
+        grid-template-columns: repeat(2,1fr);
+    }
+    @media screen and (max-width:515px){
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width:1142px){
+    .card__firstBox h1{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width:768px){
+    .card__firstBox h1{
+        font-size: 1.4rem;
+    }
+
+    .card__secondBox h2,
+    .card__thirdBox h2,
+    .card__fourthBox h2{
+        font-size: 1.1rem;
+    }
+
+}

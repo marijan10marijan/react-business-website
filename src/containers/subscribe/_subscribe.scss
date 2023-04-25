@@ -1,0 +1,109 @@
+.subscribe{
+    padding-block-start: 7rem;
+    padding-block-end: 10rem;
+    background-color: $clr-bg-light;
+
+    @media screen and (max-width:768px){
+        padding-block-start: 4rem;
+        padding-block-end: 7rem;
+    }
+
+    &__div{
+        text-align: center;
+    }
+
+    &__title{
+        font-size: 3rem;
+        color: #232d62;
+
+        @media screen and (max-width:768px){
+            font-size: 2rem;
+            width: 90%;
+            margin-inline: auto;
+        }
+    }
+
+    &__text{
+        color: #939394;
+        margin-block-end: 2.5rem;
+        width: 80%;
+        margin-inline: auto;
+
+        @media screen and (max-width:768px){
+            margin-block-end: 2rem;
+            width: 90%;
+            font-size: 1rem;
+        }
+    }
+
+    &__form{
+        display: flex;
+        gap: 1.2rem;
+        justify-content: center;
+
+        @media screen and (max-width:768px){
+            flex-direction: column;
+            width: 85%;
+            margin-inline: auto;
+        }
+
+        &>*{
+            display: flex;
+            flex-direction: column;
+            gap: .4rem;
+            align-items: flex-start;
+
+            & label{
+                font-size: .9rem;
+            }
+
+            & input{
+                padding: .8rem .7rem;
+                border: 1px solid #939394;
+                color: #939394;
+                border-radius: 5px;
+                font-size: .9rem;
+                outline-color: #939394;
+            }
+        }
+
+        &-email{
+            width: 370px;
+
+            & input{
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:768px){
+            &-email,
+            &-name,
+            &-city{
+                width: 100%;
+
+                & input{
+                    width: 100%;
+                }
+            }
+        }
+
+        &-btn{
+            padding: .8rem 1rem;
+            background-color: #4d66f0;
+            color: $clr-text;
+            font-weight: 700;
+            align-self: flex-end;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 300ms ease-in;
+
+            @media screen and (max-width:768px){
+                align-self: center;
+            }
+        }
+        &-btn:hover{
+            opacity: .8;
+        }
+    }
+}

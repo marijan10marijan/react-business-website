@@ -1,0 +1,67 @@
+ .studies{
+    background-color: $clr-bg-light;
+    padding-block: 5rem;
+    width: min(1600px, 95%);
+    margin-inline: auto;
+
+    @media screen and (max-width:768px){
+        width: 100%;
+    }
+
+
+    &__text{
+        text-align: center;
+        margin-block-end: 1.5rem; 
+    }
+
+    &__title{
+        color: $clr-dark;
+        width: min(800px, 90%);
+        margin-inline: auto;
+        font-size: calc(22px + 1.6vw);
+        line-height: 1.2;
+        font-weight: bold;
+        text-align: center;
+        font-family: $font-family;
+        margin-block-end: 3rem;
+
+        @media screen and (max-width:768px){
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width:515px){
+            font-size: 1.4rem;
+        }
+    }
+
+    &__flex-items{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+
+        @media screen and (max-width:768px){
+            flex-direction: column;
+        }
+    }
+    &__flex-items>*{
+        flex: 1;
+
+        & img{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin-inline-start:0;
+        }
+    }
+
+    &__item-title{
+        margin-block: 1.5rem;
+        font-size: 1.2rem;
+        margin-inline-start: 1.2rem;
+        color: $clr-dark;
+    }
+    &__item-text{
+        margin-inline-start: 1.2rem;
+        color: $clr-dark;
+    }
+ }
