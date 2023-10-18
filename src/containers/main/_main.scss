@@ -1,8 +1,9 @@
 .main{
     width: 100%;
     background-color: $clr-bg-light;
-    padding-block-start: 10rem;
-    padding-block-end: 4.5rem;
+    padding-block-start: calc(2.5rem + 100px);
+    padding-block-end: 2.5rem;
+    min-height: 100vh;
 
     &__content{
         text-align: center;

@@ -13,7 +13,7 @@ const Main = () => {
       title: 'Scale your Infrastructure with Cloud',
       text: 'Automate, scale and deliver applications at high velocity without compromising security with the best Cloud DevOps practices'
     },
-    {
+    { 
       id : 3,
       title: 'Design for Innovation',
       text: 'User-centric design process to deliver best user experience and fulfil business objectives in the best possible way'

@@ -3,7 +3,7 @@ import LifeOne from '../../assets/life1.webp'
 import LifeTwo from '../../assets/life2.webp'
 import LifeThree from '../../assets/life3.webp'
 import LifeFour from '../../assets/life4.webp'
-import LifeFive from '../../assets/life5.webp'
+import LifeFive from '../../assets/life5.webp' 
 import LifeSix from '../../assets/life6.webp'
 import LifeSeven from '../../assets/life7.webp'
 import LifeEight from '../../assets/life8.webp'
@@ -26,19 +26,17 @@ const Life = () => {
   const [index, setIndex] = useState(0)
 
   const decreaseIndex = ()=>{
-    if(index > 0){
-      setIndex(prev => {
-        return prev - 1
-      })
+    if(index === 0){
+      return setIndex(data.length - 1)
     }
+    setIndex(prev => prev - 1)
   }
 
   const increaseIndex = ()=>{
-    if(data.length-1 > index + 2){
-      setIndex(prev => {
-        return prev + 1
-      })
+    if(index === data.length - 1){
+      return setIndex(0)
     }
+    setIndex(prev => prev + 1)
   }
 
   return (
@@ -48,16 +46,8 @@ const Life = () => {
         <div className='life__title'>Life at <br/> <span className='life__title-span'>Fibonalabs</span></div>
         <div className="life__box">
           <div className="life__box-div">
-            <img src={data[index].image} alt="image of our team" />
-            <h1 className='life__box-text'>{data[index].text}</h1>
-          </div>
-          <div className="life__box-div">
-            <img src={data[index+1].image} alt="image of our team" />
-            <h1 className='life__box-text'>{data[index+1].text}</h1>
-           </div>
-          <div className="life__box-div" >
-            <img src={data[index+2].image} alt="image of our team" />
-            <h1 className='life__box-text'>{data[index+2].text}</h1>
+            <img src={data[index].image} alt={data[index].text} />
+            <p className='life__box-text'>{data[index].text}</p>
           </div>
         </div>
         <div className="life__buttons">
